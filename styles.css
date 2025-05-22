@@ -1,0 +1,254 @@
+/* ======== RESET OCH GRUNDINSTÄLLNINGAR ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Tienne", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    background-image: url('images//office.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ======== LOGIN BAKGRUND OCH KONTAINER ======== */
+.background-blur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    z-index: 0;
+}
+
+.login-container {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.login-form input,
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+.login-form input {
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #fff;
+}
+
+.login-form button {
+    background-color: #3498db;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #2980b9;
+}
+
+.error {
+    color: red;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* ======== HUVUDLAYOUT ======== */
+body {
+    display: flex;
+    
+}
+
+/* ======== HEADER ======== */
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 5vw;
+    height: 100vh;
+    background-color: #E3F2FD;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 30px;
+    height: 30px;
+    margin-top: 10%;
+    border-radius: .4rem;
+}
+
+header button {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    display: flex;
+}
+
+.vertical_align {
+    display: flex;
+    flex-direction: row;
+}
+
+.filler {
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+
+/* ======== INNEHÅLLSRUTA ======== */
+.rest {
+    background-color: #F5F5F5;
+    height: auto;
+    width: 95vw;
+    color: black;
+    padding: 2%;
+    font-size: 30px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ======== STATUSRUTOR OCH BOXAR ======== */
+.box {
+    margin-left: 2%;
+    gap: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 95vw;
+    height: auto;
+    color: black;
+}
+
+.right input[type=submit] {
+    background-color: #28A745;
+    font-size: 20px;
+    padding: 2%;
+    border-radius: .4rem;
+}
+
+.right {
+    margin-top: 2%;
+    margin-right: 2%;
+    text-align: right;
+}
+
+/* ======== FORMULÄR ======== */
+.formbox {
+    width: 100%;
+    padding: 5%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3F2FD;
+    border-radius: .4rem;
+    font-size: 40px;
+}
+
+input[type=text],
+input[type=password],
+input[type=email],
+select {
+    margin: 2%;
+    width: 40%;
+    font-size: 20px;
+    padding: 2%;
+    border-radius: .4rem;
+}
+
+input[type=submit] {
+    width: 80%;
+    padding: 2%;
+    margin: 4% auto;
+    background-color: #007AFF;
+    color: #E3F2FD;
+    border-radius: .4rem;
+    font-size: 20px;
+}
+
+.formbox button {
+    width: 40%;
+    border-radius: .4rem;
+    background-color: #007AFF;
+    color: #E3F2FD;
+    font-size: 30px;
+    padding: 1%;
+}
+
+/* ======== ANNAT INNEHÅLL ======== */
+.other {
+    width: 95vw;
+    color: black;
+    padding: 2%;
+    font-size: 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cube {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #E3F2FD;
+    width: 48%;
+    border-radius: .4rem;
+    padding: 2%;
+    font-weight: 700;
+    font-size: 15px;
+    color: #222222;
+    margin-top: 4%;
+}
+
+.cube img {
+    width: 50%;
+    margin: 2%;
+}
+
+.cube input[type=submit] , button {
+    min-width: 200px;
+    padding: 5%;
+    margin-top: 2%;
+    background-color: #007AFF;
+    color: #E3F2FD;
+}
