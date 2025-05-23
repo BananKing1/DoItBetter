@@ -16,9 +16,9 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
         $result = mysqli_query($conn, $sql);
     
         if($result) {
-            echo "Status uppdaterad!";
+            echo "";
         } else {
-            echo "Fel: " . mysqli_error($conn);
+            echo "" . mysqli_error($conn);
         }
     }
 

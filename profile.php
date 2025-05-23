@@ -31,7 +31,7 @@ if(isset($_SESSION['id']) && isset($_SESSION['username'])){
 
             <div class="filler"></div>
 
-            <img src="images/Icons/user.png" alt="user" onclick="location.href='Profile.php'">
+            <img src="images/Icons/user.png" alt="user" onclick="location.href='profile.php'">
         </div>
     </header>
 
